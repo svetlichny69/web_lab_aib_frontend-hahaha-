@@ -1,0 +1,141 @@
+body 
+{
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(0deg,#1b091b, #b7094c  );
+}
+
+header
+{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+    background-color: #fe019a;
+    background-image: linear-gradient(0deg, #065a60 0%, #4d194d 150%);
+}
+
+
+.Tpose
+{
+    margin-right: auto;
+    margin-left: 10px;
+    height: 80px;
+    width: 160px;
+    border: 3px solid black;
+    
+}
+
+header a
+{
+    color: rgb(202, 202, 202);
+    text-shadow: 2px 2px 0px black;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+main
+{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+.main-catalog
+{
+    //margin-left: auto;
+    //margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+    //background-color: #2e0d1a3f;
+}
+
+.mem img
+{
+    
+    width: 300px;
+    height: 300px;
+    display: block;
+    border: 3px solid black;
+    background-color: #000;
+}
+
+h2
+{
+    color: rgb(175, 13, 175);
+    text-shadow: 2px 2px 0px black;
+}
+
+p
+{
+    margin: 0;
+    text-align: center;
+
+}
+
+.second-catalog
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    //background-color: rgba(59, 64, 68, 0.322);
+}
+
+.dva h1
+{
+    margin-top: 100px;
+    color: rgb(1, 167, 167);
+    text-shadow: 3px 3px 0px black;
+}
+
+.dva
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+
+.mem2 img
+{
+    width: 400px;
+    height: 400px;
+    display: block;
+    border: 3px solid black;
+    background-color: #000;
+}
+
+@media (max-width: 640px)
+{
+    .mem2 img 
+    {
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+
+p
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    
+}
+
+.second-catalog p
+{
+    font-size: 30px;
+    -webkit-text-stroke: 2px black;
+}
+
+.zelensky
+{
+    margin-top: 50px;
+}
+

@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    background-color: #e7098b;
+  }
+  
+  button {
+    border: 3px solid #300101;
+    padding: 25px 50px;
+    color: crimson;
+    font-weight: 1000;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: Aqua;
+    cursor: pointer;
+  }
