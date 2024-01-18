@@ -1,0 +1,133 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JS</title>
+</head>
+<body>
+<script>
+    
+    let apple = 10; 
+    alert(apple);
+    console.log(apple);
+
+    let condition = "hahaha";
+    console.log('Good game is ' + condition);
+
+    ///
+    let int1 = 69;
+    let str1 = '100';
+    let bol1 = true;
+    console.log(int1 + str1);
+    console.log(int1 + bol1);
+    console.log(str1 + int1);
+    console.log(str1 + bol1);
+    console.log(bol1 + int1);
+    console.log(bol1 + str1);
+
+    ///
+    let n=10;
+    let mas = [n];
+    for (let i=0; i < n; i++)
+    {
+        mas[i]= -25+i*5;
+    }
+    console.log(mas);
+    let mas2 = mas.filter((num) => num>0);
+    console.log(mas2);
+
+    ///
+    function randomInteger(min, max) 
+    {
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
+    }
+    console.log(randomInteger(0, 10));
+
+    function ArrayMultiply (array, num)
+    {
+        let array2=[];
+        for (let i=0; i<array.length; i++)
+        {
+            array2[i]=array[i]*num;
+        }
+        return array2;
+    }
+    let mas3= ArrayMultiply (mas, 2);
+    console.log(mas3);
+
+    const randomWord = (a) =>
+    {
+        let word = '';
+        let letters = 'abcdefghijklmnopqrstuvwxyz';
+        for (let i=0; i<a; i++)
+        {
+            let j = randomInteger(0, letters.length);
+            word = word+letters[j];
+        }
+        return word;
+    }
+    console.log("random word: "+ randomWord(6));
+
+    ///
+    let Object =
+    {
+        firstName: "Nikita",
+        surname: "Svetlichny",
+        patronymic: "Alexeevich",
+        birthday: '2003-10-20',
+        hobby: "videogames",
+        group: "AIB-3-043",
+
+        inf: function()
+        {
+            const currentDate = new Date().getFullYear();
+            const birthdayDate = new Date(this.birthday).getFullYear();
+            const age = currentDate - birthdayDate;  
+
+            return ("ФИО: "+this.firstName+" "+this.surname+" "+this.patronymic+" день рождения: "+this.birthday+" "+" хобби: "+this.hobby+" возраст: "+age);
+        }
+    };
+    alert(Object.inf());
+
+    let Workers =
+    {
+        Светличный: 1000,
+        Битарашвили: 2000,
+        Романов: 3000,
+        Капкаев: 4000,
+        Хусаинов: 5000,
+        Игнатьева: 6000,
+        Глазунов: 7000,
+        Лященко: 8000,
+        Цой: 9000,
+        Ковальчук: 10000,
+    };
+
+    function salary(obj)
+    {
+        var GenSalary = 0;
+        for (var key in obj)
+        {
+            GenSalary+=obj[key];
+        }
+        return GenSalary;
+    }
+
+
+
+    console.log(salary(Workers));
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
+```
